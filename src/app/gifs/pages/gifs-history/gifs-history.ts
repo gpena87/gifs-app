@@ -12,10 +12,6 @@ import { GifsList } from '../../components/gifs-list/gifs-list';
 })
 export default class GifsHistory {
 
-  // query = inject(ActivatedRoute).params.subscribe(params => {
-  //   console.log(params);
-  // });
-
   gifsService = inject(GifsService);
 
   query = toSignal(inject(ActivatedRoute).params.pipe(
